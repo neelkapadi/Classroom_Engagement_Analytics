@@ -64,7 +64,7 @@ Attentive Pose --> Low Fatigue Score
 Slouch Pose --> High Fatigue Score
 
 ### Generated Parquet Dataset (.parquet)
-* Showing only first 5 rows 
+* Showing only first few rows 
 <!-- Drag and drop your Parquet table screenshot here -->
 <img width="1456" height="651" alt="Screenshot 2026-09-27 020416" src="https://github.com/user-attachments/assets/89725858-b20c-433e-a098-f85a58c386b8" />
 
