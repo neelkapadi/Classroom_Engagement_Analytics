@@ -6,7 +6,7 @@ This project is developed for the completion of Latent 48 Hackathon.
 Classroom Engagement Analytics is a computer vision pipeline designed for volunteer educators at the Disha Foundation, KV School, IIT Guwahati. It passively quantifies primary school classroom engagement and physical posture fatigue without requiring teachers to manage complex hardware or monitor live dashboards. By converting physical signals into a structured time-series dataset, educators can identify chronic disengagement trends, optimize lesson pacing and identify student who need special attention.
 
 ## ⚙️ How It Works (Code Explanation)
-The pipeline (`stickvideoblur_parquetfile.py`) processes raw classroom video through three main stages:
+The pipeline (`Latent48_Class_Engagement_Analytics.py`) processes raw classroom video through three main stages:
 1. **Multi-Person Pose Tracking:** Utilizes Google's MediaPipe Tasks API (`pose_landmarker_heavy.task`) to extract 33-point kinematic keypoints for up to 20 students simultaneously.
 2. **Audio Fidget Analysis:** Uses `moviepy` to extract the audio track and `librosa` (Harmonic-Percussive Source Separation) to isolate transient percussive noises (e.g., desk tapping, shuffling) as a restlessness metric.
 3. **Privacy & Export:** Dynamically applies a Gaussian blur to all facial landmarks (`landmarks[0:11]`) before outputting the annotated video, and exports rolling 60-second engagement averages to a `.parquet` dataset.
