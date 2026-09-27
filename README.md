@@ -19,8 +19,14 @@ The pipeline (`stickvideoblur_parquetfile.py`) processes raw classroom video thr
 ## 📊 Data Documentation
 As per the Latent48 submission requirements, here is the profile of our submitted dataset:
 
+* **Sources & Collection Timeline (Hackathon Authenticity):** Data was exclusively collected during the Latent48 competition window on **September 26, 2026, between 3:00 PM and 5:00 PM** at KV School. We recorded three raw classroom sessions (12-minute, 19-minute, and 9-minute) using a Nothing 4 PRO smartphone mounted on a tripod.
+  
+<img width="630" height="974" alt="WhatsApp Image 2026-09-27 at 15 05 37 (1)" src="https://github.com/user-attachments/assets/1f49aec2-0e28-4c8e-801d-19542a9f93c6" />
+<img width="630" height="851" alt="WhatsApp Image 2026-09-27 at 15 05 36" src="https://github.com/user-attachments/assets/47905662-8a14-4074-838e-69da62a82dd6" />
+
+* **Note on Raw Data Hosting:** The original `.mp4` recordings exceed 500MB each, bypassing GitHub's file size limits. To prove our physical-to-digital pipeline while adhering to platform constraints, we have uploaded the processed `.parquet` dataset, our codebase, and a compressed demo clip. The full raw footage is retained locally and available to the judging panel upon request. (Also uploaded in Drive submission link)
 * **Row Count:** 19 rows (representing a 19-minute classroom sample).
-* **Collection Window:** 60-second rolling aggregation windows (`WINDOW_SECONDS = 60`).
+* **Collection Window:** 60-second rolling aggregation windows (`WINDOW_SECONDS = 60`). Pipeline "collects" all the slumping, fidgeting, and audio data for a full 60 seconds. It then calculates the average for that entire minute and logs just one clean row in output Parquet file. Similarly it moves further for next 60-sec.
 * **Sources:** A single smartphone camera (Nothing 4 PRO) mounted on a tripod in front corner of classroom capturing video and percussive room audio.
 * **Observed vs Inferred vs Synthetic:** 
   * *Observed:* Raw spatial coordinates (X, Y) of student shoulders/ears and raw audio decibels.
