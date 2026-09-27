@@ -19,7 +19,7 @@ The pipeline (`stickvideoblur_parquetfile.py`) processes raw classroom video thr
 ## 📊 Data Documentation
 As per the Latent48 submission requirements, here is the profile of our submitted dataset:
 
-* **Row Count:** 14 rows (representing a 14-minute classroom sample).
+* **Row Count:** 19 rows (representing a 19-minute classroom sample).
 * **Collection Window:** 60-second rolling aggregation windows (`WINDOW_SECONDS = 60`).
 * **Sources:** A single smartphone camera (Nothing 4 PRO) mounted on a tripod in front corner of classroom capturing video and percussive room audio.
 * **Observed vs Inferred vs Synthetic:** 
@@ -48,10 +48,17 @@ The generated `classroom_engagement_data.parquet` file contains the following sc
 ### AI Pose Tracking in Action
 <!-- Replace the link below with your actual image filename or GitHub drag-and-drop link -->
 <img width="372" height="495" alt="Screenshot 2026-09-27 022159" src="https://github.com/user-attachments/assets/52abd055-c02b-4123-9ff7-1fd7fc86df2f" />
+
 Attentive Pose --> Low Fatigue Score
 
 <img width="512" height="482" alt="Screenshot 2026-09-27 022329" src="https://github.com/user-attachments/assets/16f271d3-a57d-41ea-9bc3-2bfb7ac85d29" />
+
 Slouch Pose --> High Fatigue Score
+
+### Generated Parquet Dataset (.parquet)
+* Showing only first 5 rows 
+<!-- Drag and drop your Parquet table screenshot here -->
+<img width="1456" height="651" alt="Screenshot 2026-09-27 020416" src="https://github.com/user-attachments/assets/89725858-b20c-433e-a098-f85a58c386b8" />
 
 ### Short Demo Clip
 <!-- If you use the GitHub web editor, just drag your MP4 here and it will generate the video player automatically -->
