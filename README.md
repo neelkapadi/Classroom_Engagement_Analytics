@@ -1,6 +1,8 @@
 # Classroom Engagement Analytics
 
 ## 🎯 Project Goal
+This project is developed for the completion of Latent 48 Hackathon.
+
 Classroom Engagement Analytics is a computer vision pipeline designed for volunteer educators at the Disha Foundation, KV School, IIT Guwahati. It passively quantifies primary school classroom engagement and physical posture fatigue without requiring teachers to manage complex hardware or monitor live dashboards. By converting physical signals into a structured time-series dataset, educators can identify chronic disengagement trends, optimize lesson pacing and identify student who need special attention.
 
 ## ⚙️ How It Works (Code Explanation)
